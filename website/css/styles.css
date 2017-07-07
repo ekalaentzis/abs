@@ -1,7 +1,7 @@
 @media only screen and (max-device-width: 700px) {
     body {
-        background-color: #FFF;
-        font-size: 3em;
+        background-color: #333333;
+        font-size: 2em;
         font-family: 'Open Sans', sans-serif;
         margin: 0;
         padding: 0;
@@ -10,14 +10,16 @@
     #main {
         background-color: #616161;
     }
-    #logo {
-        margin: 20px auto 20px auto;
-        width: block;
-        width: 600px;
-        height: 200px;
+    header {
         padding: 20px;
-        background-image: url("../images/logo2.png");
-        display: inline-block;
+    }
+    #logo {
+        max-width: 280px;
+        margin: 0px auto 0px auto;
+        width: 254px;
+        height: 141px;
+        /*padding: 20px;*/
+        background-image: url("../images/logo3.png");
     }
     #summary {
         padding: 50px;
@@ -28,18 +30,6 @@
         border-top: 25px #FFFF00 solid;
         padding: 10px;
         background-color: #212121;
-    }
-    #slideshow {
-        position: relative;
-        height: 300px;
-        padding: 80px 0 20px 0;
-    }
-    #slideshow > div {
-        position: absolute;
-        width: 100%;
-    }
-    #slideshow div img {
-        width: 100%;
     }
     a[href^="tel"] {
         color: inherit;
@@ -141,18 +131,18 @@
         background-repeat: no-repeat;
     }
     #fbframe {
-      display: none;
+        display: none;
     }
     #hours dt {
-      float: left;
-      padding-right: 40px;
-      width: 100%;
-      font-weight: bold;
+        float: left;
+        padding-right: 40px;
+        width: 100%;
+        font-weight: bold;
     }
 }
 
 @media only screen and (min-device-width: 700px) {
-/*    html {
+    /*    html {
         margin: 0;
         padding: 0;
     }*/
@@ -160,34 +150,45 @@
         font-family: 'Open Sans', sans-serif;
         padding: 0;
         margin: 0;
-        background-color: #212121;
+        background-color: #FFF;
         display: block;
-        color: #FFF;
+        color: #000;
         font-size: 1em;
     }
     h1 {
-      font-size: 1.2em;
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.2em;
     }
     #container {
-        background: url('../images/back.jpg') no-repeat center center fixed;
-        padding-bottom: 10px;
+        /*background: url('../images/back.jpg') no-repeat center center fixed;*/
     }
     #main {
+        padding: 50px 0 50px 0;
+        clear: both;
         width: 80%;
         min-width: 460px;
         margin: 0 auto 0 auto;
-        background-color: rgba(0, 0, 0, 0.9);
+        /*background-color: rgba(0, 0, 0, 0.9);*/
         margin-bottom: 20px;
+        overflow: auto;
     }
     #styling {
         border-top: 8px solid #FFF;
         border-bottom: 8px solid #FFF;
     }
     header {
+        border-bottom: 2px solid grey;
+        overflow: auto;
+        padding: 20px;
+    }
+    #business_title {
+        float: left;
         padding: 20px;
     }
     #logo {
-        width: 30%;
+        float: right;
         max-width: 280px;
         margin: 0px auto 0px auto;
         width: 254px;
@@ -195,26 +196,21 @@
         /*padding: 20px;*/
         background-image: url("../images/logo3.png");
     }
-    #fbframe {
-        margin: 0 auto 0 auto;
-        width: 340px;
-        float: right;
-    }
     #summary {
         width: 70%;
         min-width: 450px;
         margin: 0 auto 0 auto;
         padding: 30px auto 0 auto;
     }
-    #summary article {
-      border-bottom: 1px #fff solid;
-      padding: 30px 0 30px 0;
+    #summary section {
+        border-bottom: 1px #fff solid;
     }
     #map {
         width: 100%;
         height: 300px;
     }
     #social {
+        clear: both;
         width: 140px;
         margin: 0 auto 0 auto;
         padding: 20px 0 20px 0;
@@ -247,19 +243,17 @@
     }
     footer {
         clear: both;
-        border-top: 10px #424242 solid;
-        width: 100%;
+        border-top: 3px #424242 solid;
         margin: 0 auto 0 auto;
-        background-color: #212121;
         bottom: 0;
-        height: 100%
+        height: 100%;
+        padding: 15px;
+        background: url('../images/back.jpg') no-repeat center center fixed;
     }
-    #section p,
     footer p {
-        clear: both;
         text-align: center;
-        margin: 0;
-        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: #FFF;
     }
     a:link {
         color: #4CAF50;
@@ -282,10 +276,17 @@
     #mobilemap {
         display: none;
     }
+    #fbframe {
+        float: right;
+    }
+    #hours {
+        float: left;
+        width: 300px;
+    }
     #hours dt {
-      float: left;
-      padding-right: 20px;
-      width: 35px;
-      font-weight: bold;
+        float: left;
+        padding-right: 20px;
+        width: 35px;
+        font-weight: bold;
     }
 }
