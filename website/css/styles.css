@@ -1,56 +1,61 @@
-@media only screen and (max-device-width: 700px) {
+@media only screen and (max-device-width: 736px) {
+    /*MOBILE*/
     body {
-        background-color: #333333;
-        font-size: 2em;
+        background-color: #FFF;
+        font-size: 1em;
         font-family: 'Open Sans', sans-serif;
         margin: 0;
         padding: 0;
-        color: #FFF;
+        color: #000;
     }
     #main {
         background-color: #616161;
     }
     header {
-        padding: 20px;
+        padding: 0 10px 0 10px;
+        text-align: center;
+        overflow: auto;
+    }
+    header h1 {
+        margin: 0;
+    }
+    h2 {
+        margin: 10px 0 10px 0;
     }
     #logo {
-        max-width: 280px;
+        max-width: 130px;
         margin: 0px auto 0px auto;
-        width: 254px;
-        height: 141px;
-        /*padding: 20px;*/
+        width: 130px;
+        height: 72px;
         background-image: url("../images/logo-350x194.png");
+        background-repeat: no-repeat;
+        background-size: 130px 72px;
     }
     #summary {
-        padding: 50px;
+        padding: 0;
     }
-    footer {
-        text-align: center;
-        background-color: #616161;
-        border-top: 25px #FFFF00 solid;
-        padding: 10px;
-        background-color: #212121;
+    #summary section {
+        padding: 0 20px 0 20px;
+    }
+    section article {
+        overflow: auto;
+        margin-bottom: 20px;
     }
     a[href^="tel"] {
         color: inherit;
         text-decoration: none;
     }
     .call {
-        font-size: 60px;
+        font-size: 1.5em;
         text-align: center;
     }
     .number {
-        color: #FFFF00;
+        color: #4CAF50;
     }
-    footer p {
-        clear: both;
-    }
-    footer {
-        margin-bottom: 150px;
-    }
+
     #social {
-        width: 450px;
-        height: 210px;
+        width: 150px;
+        height: auto;
         margin: 0 auto 0 auto;
     }
     #social article a {
@@ -69,83 +74,110 @@
         margin: 0 auto;
         background-size: 175px 175px;
     }
+    footer {
+        clear: both;
+        text-align: center;
+        margin-bottom: 55px;
+        padding: 10px 0 10px 0;
+    }
     .facebook,
     .google {
-        width: 150px;
-        height: 150px;
+        width: 50px;
+        height: 50px;
         border-radius: 10px;
-        background-size: 150px 150px;
+        background-size: 50px 50px;
         float: left;
     }
+    #social a {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        margin: 0 10px 0 10px;
+    }
     .facebook {
-        background-image: url('../images/facebook.jpg');
+        background-image: url('../images/facebook-100x100.jpg');
         border-radius: 10px;
     }
     .google {
-        background-image: url('../images/google.jpg');
+        background-image: url('../images/google-100x100.jpg');
         border-radius: 10px;
     }
     #main a:link,
     #footer a:link {
-        color: #FFFF00;
+        color: #4CAF50;
         text-decoration: none;
     }
     #main a:visited,
     #footer a:visited {
-        color: #FFFF00;
+        color: #4CAF50;
         text-decoration: none;
     }
     #main a:hover,
     #main a:focus,
     #footer a:hover,
     #footer a:focus {
-        color: #FFFF00;
+        color: #4CAF50;
         text-decoration: underline;
     }
     #main a:active,
     #footer a:active {
         color: #fb0e02;
     }
-    #phonecall {
+    #mobile_call {
         background-color: #4CAF50;
         clear: both;
         width: 100%;
         position: fixed;
         bottom: 0px;
-        height: 150px;
+        height: 55px;
+        padding: 0;
     }
     #phone {
-        width: 100%;
-        height: 100%;
-        padding: 50px 0 50px 0;
+        padding: 15px 0 15px 0;
         display: block;
     }
     #phone svg {
-        width: 50px;
-        height: 50px;
+        width: 25px;
+        height: 25px;
         margin: auto;
         display: block;
-        text-indent: -9999px;
-        background-size: 50px 50px;
+        /*text-indent: -9999px;*/
+        background-size: 25px 25px;
         fill: #FFF;
         background-repeat: no-repeat;
     }
-    #fbframe {
+    #fb_frame,
+    #logo_phone {
         display: none;
+    }
+    #hours {
+        width: 100%;
+    }
+    #hours dl {
+        padding: 0 10px 0 10px;
+    }
+    #hours dl,
+    #hours dd {
+        margin: 0;
     }
     #hours dt {
         float: left;
-        padding-right: 40px;
+        padding-right: 20px;
+        width: 50px;
+        font-weight: 700;
+    }
+    #g_map {
+        clear: both;
+        margin: 0 auto 0 auto;
+    }
+    #g_map iframe {
         width: 100%;
-        font-weight: bold;
+        height: 300px;
     }
 }
 
-@media only screen and (min-device-width: 700px) {
-    /*    html {
-        margin: 0;
-        padding: 0;
-    }*/
+@media only screen and (min-device-width: 737px) {
+    /*DESKTOP*/
     body {
         font-family: 'Open Sans', sans-serif;
         padding: 0;
@@ -154,6 +186,7 @@
         display: block;
         color: #000;
         font-size: 1em;
+        font-weight: 300;
     }
     h1 {
         font-size: 2em;
@@ -162,15 +195,16 @@
     }
     h2 {
         font-size: 1.2em;
-    }
-    #container {
-        /*background: url('../images/back.jpg') no-repeat center center fixed;*/
+        font-weight: 700;
     }
     section {
-        border: 1px solid grey;
+        overflow: auto;
+    }
+    section article {
+                /*border: 1px solid;*/
     }
     #main {
-        padding: 50px 0 50px 0;
+        padding: 25px 0 25px 0;
         clear: both;
         width: 80%;
         min-width: 460px;
@@ -183,12 +217,15 @@
         overflow: auto;
         padding: 50px 75px 0 75px;
     }
-    #business_title {
+    #header_left {
         float: left;
         padding: 20px;
     }
-    #logo {
+    #header_right {
         float: right;
+        text-align: center;
+    }
+    #logo {
         max-width: 280px;
         margin: 0px auto 0px auto;
         width: 254px;
@@ -197,15 +234,10 @@
         background-size: 254px 141px;
         background-repeat: no-repeat;
     }
-    #summary {
-        width: 70%;
-        min-width: 450px;
-        margin: 0 auto 0 auto;
-    }
     #summary section {
         clear: both;
-        padding: 0 0 50px 0;
         border-bottom: 1px solid grey;
+        padding: 20px 20% 20px 20%;
     }
     #map {
         width: 100%;
@@ -213,30 +245,37 @@
     }
     #social {
         clear: both;
-        width: 140px;
+        width: 141px;
         margin: 0 auto 0 auto;
         padding: 20px 0 20px 0;
         height: 70px;
     }
     #social a {
+        padding: 10px;
         width: 50px;
         height: 50px;
+                background-size: 50px 50px;
     }
     .facebook,
     .google {
+        display: inline-block;
+        padding: 10px;
         width: 50px;
         height: 50px;
-        border-radius: 5px;
         background-size: 50px 50px;
         background-repeat: no-repeat;
         float: left;
-        margin: 10px;
+                        background-origin: content-box;
     }
     .facebook {
         background-image: url('../images/facebook-100x100.jpg');
+
     }
     .google {
         background-image: url('../images/google-100x100.jpg');
+        border-left: 1px solid #ccc;
+
+
     }
     .call {
         font-size: 2em;
@@ -245,18 +284,24 @@
     .number {
         color: #FFFF00;
     }
+ /*   .divider {
+        border-left: 1px solid #cccccc;
+    }*/
+    #social a {
+        overflow: auto;
+    }
     footer {
         clear: both;
         margin: 0 auto 0 auto;
         bottom: 0;
         height: 100%;
-        padding: 15px;
-        background: url('../images/back.jpg') no-repeat center center fixed;
+        font-weight: 300;
     }
     footer p {
         text-align: center;
         background-color: rgba(0, 0, 0, 0.4);
         color: #FFF;
+        margin: 10px 0 0 0;
     }
     a:link {
         color: #4CAF50;
@@ -268,23 +313,37 @@
     }
     a:hover,
     a:focus {
-        color: #4CAF50;
+        color: #666600;
     }
     a:active {
-        color: #81c784;
+        color: #000;
     }
-    #phonecall {
+    #mobile_call {
         display: none;
     }
-    #mobilemap {
-        display: none;
+    #g_map {
+        clear:both;
     }
-    #fbframe {
+    #g_map article {
+        width: 75%;
+        margin: 0 auto 0 auto;
+        height: 500px;
+        display: block;
+    }
+    #g_map iframe {
+        border: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #fb_frame {
         float: right;
+        width: 50%;
+        padding: 10px;
     }
     #hours {
-        float: left;
-        width: 300px;
+        width: 50%;
+        padding: 10px;
+
     }
     #hours dt {
         float: left;
