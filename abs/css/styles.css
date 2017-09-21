@@ -1,9 +1,10 @@
 @media only screen and (max-device-width: 736px) {
     /*MOBILE*/
     body {
-        background-color: #FFF;
-        font-size: 1em;
         font-family: 'Open Sans', sans-serif;
+        font-size: 1em;
+        font-weight: 300;
+        background-color: #FFF;
         margin: 0;
         padding: 0;
         color: #000;
@@ -102,25 +103,20 @@
         background-image: url('../images/google-100x100.jpg');
         border-radius: 10px;
     }
-    #main a:link,
-    #footer a:link {
+    a:link {
         color: #4CAF50;
         text-decoration: none;
     }
-    #main a:visited,
-    #footer a:visited {
+    a:visited {
         color: #4CAF50;
         text-decoration: none;
     }
-    #main a:hover,
-    #main a:focus,
-    #footer a:hover,
-    #footer a:focus {
+    a:hover,
+    a:focus {
         color: #4CAF50;
         text-decoration: underline;
     }
-    #main a:active,
-    #footer a:active {
+    a:active {
         color: #fb0e02;
     }
     #mobile_call {
@@ -179,14 +175,16 @@
 @media only screen and (min-device-width: 737px) {
     /*DESKTOP*/
     body {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Lato', sans-serif;
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 1.5;
         padding: 0;
         margin: 0;
         background-color: #FFF;
         display: block;
         color: #000;
-        font-size: 1em;
-        font-weight: 300;
+
     }
     h1 {
         font-size: 2em;
@@ -200,10 +198,10 @@
     section {
         overflow: auto;
     }
-    section article {
+    div {
         border: 1px solid;
     }
-    #main {
+    .container {
         padding: 25px 0 25px 0;
         clear: both;
         width: 80%;
@@ -213,15 +211,24 @@
         margin-bottom: 20px;
         overflow: auto;
     }
+    .sub-container {
+        margin: 10px 0;
+        padding: 10px 0;
+        width: auto;
+        height: auto;
+        clear: both;
+        border-bottom: 1px solid grey;
+        /* padding: 20px 20% 20px 20%; */
+    }
     header {
         overflow: auto;
         padding: 50px 75px 0 75px;
     }
-    #header_left {
+    .header_left {
         float: left;
         padding: 20px;
     }
-    #header_right {
+    .header_right {
         float: right;
         text-align: center;
     }
@@ -234,14 +241,10 @@
         background-size: 254px 141px;
         background-repeat: no-repeat;
     }
-    #content section {
-        clear: both;
-        border-bottom: 1px solid grey;
-        padding: 20px 20% 20px 20%;
-    }
+
     #map {
         width: 100%;
-        height: 300px;
+        height: 30%;
     }
     #social_icons {
         clear: both;
@@ -257,9 +260,8 @@
         background-size: 50px 50px;
         overflow: auto;
     }
-    .facebook,
-    .google {
-        display: inline-block;
+    .social-image {
+        /* display: inline-block; */
         padding: 10px;
         width: 50px;
         height: 50px;
@@ -330,20 +332,18 @@
     #fb_frame {
         float: right;
         width: 50%;
-        padding: 10px;
+        /* padding: 10px; */
     }
     #hours {
+        float: left;
         height: 100%;
         width: 50%;
-        padding: 10px;
+        /* padding: 10px; */
     }
     #hours dt {
         float: left;
         padding-right: 20px;
         width: 35px;
         font-weight: bold;
-    }
-    #hours_fb {
-        height: 400px;
     }
 }
