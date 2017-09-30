@@ -1,17 +1,15 @@
 @media only screen and (max-device-width: 736px) {
     /*MOBILE*/
     body {
-        background-color: #FFF;
+        font-family: 'Roboto', 'Open Sans', 'Lato', 'Helvetica Neue', sans-serif;
         font-size: 1em;
-        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        background-color: #FFF;
         margin: 0;
         padding: 0;
         color: #000;
     }
-    #main {
-        background-color: #616161;
-    }
-    header {
+    .header {
         padding: 0 10px 0 10px;
         text-align: center;
         overflow: auto;
@@ -22,7 +20,7 @@
     h2 {
         margin: 10px 0 10px 0;
     }
-    #logo {
+    .logo {
         max-width: 130px;
         margin: 0px auto 0px auto;
         width: 130px;
@@ -102,25 +100,20 @@
         background-image: url('../images/google-100x100.jpg');
         border-radius: 10px;
     }
-    #main a:link,
-    #footer a:link {
+    a:link {
         color: #4CAF50;
         text-decoration: none;
     }
-    #main a:visited,
-    #footer a:visited {
+    a:visited {
         color: #4CAF50;
         text-decoration: none;
     }
-    #main a:hover,
-    #main a:focus,
-    #footer a:hover,
-    #footer a:focus {
+    a:hover,
+    a:focus {
         color: #4CAF50;
         text-decoration: underline;
     }
-    #main a:active,
-    #footer a:active {
+    a:active {
         color: #fb0e02;
     }
     #mobile_call {
@@ -166,11 +159,7 @@
         width: 50px;
         font-weight: 700;
     }
-    #g_map {
-        clear: both;
-        margin: 0 auto 0 auto;
-    }
-    #g_map iframe {
+    .google-map{
         width: 100%;
         height: 300px;
     }
@@ -179,14 +168,16 @@
 @media only screen and (min-device-width: 737px) {
     /*DESKTOP*/
     body {
-        font-family: 'Open Sans', sans-serif;
+        font-family: 'Roboto', 'Open Sans', 'Lato', 'Helvetica Neue', sans-serif;
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 1.5;
         padding: 0;
         margin: 0;
         background-color: #FFF;
         display: block;
         color: #000;
-        font-size: 1em;
-        font-weight: 300;
+
     }
     h1 {
         font-size: 2em;
@@ -197,14 +188,13 @@
         font-size: 1.2em;
         font-weight: 700;
     }
-    section {
+    div {
         overflow: auto;
     }
-    section article {
-        border: 1px solid;
-    }
-    #main {
-        padding: 25px 0 25px 0;
+
+    /* CONTAINER STYLING */
+    .container {
+        padding: 25px 0;
         clear: both;
         width: 80%;
         min-width: 460px;
@@ -213,19 +203,38 @@
         margin-bottom: 20px;
         overflow: auto;
     }
-    header {
+    .sub-container {
+        margin: 15px 0;
+        padding: 15px 0;
+        width: auto;
+        height: auto;
+        clear: both;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: rgba(0, 0, 0, 0.1);
+        /* padding: 20px 20% 20px 20%; */
+    }
+    .sub-container-div {
+        margin-bottom: 35px;
+    }
+    /* ############### */    
+
+    /* HEADER */
+    .header {
         overflow: auto;
         padding: 50px 75px 0 75px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
-    #header_left {
+    .header_left {
         float: left;
-        padding: 20px;
     }
-    #header_right {
+    .header_right {
         float: right;
         text-align: center;
     }
-    #logo {
+    .logo {
         max-width: 280px;
         margin: 0px auto 0px auto;
         width: 254px;
@@ -234,32 +243,16 @@
         background-size: 254px 141px;
         background-repeat: no-repeat;
     }
-    #content section {
-        clear: both;
-        border-bottom: 1px solid grey;
-        padding: 20px 20% 20px 20%;
-    }
-    #map {
-        width: 100%;
-        height: 300px;
-    }
-    #social_icons {
+    /* ############### */
+
+    /* SOCIAL ICONS */
+    .social {
         clear: both;
         width: 141px;
         margin: 0 auto 0 auto;
-        padding: 20px 0 20px 0;
         height: 70px;
     }
-    #social_icons a {
-        padding: 10px;
-        width: 50px;
-        height: 50px;
-        background-size: 50px 50px;
-        overflow: auto;
-    }
-    .facebook,
-    .google {
-        display: inline-block;
+    .social-image {
         padding: 10px;
         width: 50px;
         height: 50px;
@@ -273,8 +266,12 @@
     }
     .google {
         background-image: url('../images/google-100x100.jpg');
-        border-left: 1px solid #ccc;
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: rgba(0, 0, 0, 0.1);
     }
+    /* ############### */
+    
     .call {
         font-size: 2em;
         text-align: center;
@@ -282,19 +279,24 @@
     .number {
         color: #FFFF00;
     }
-    footer {
+
+    /* FOOTER */
+    .footer {
         clear: both;
         margin: 0 auto 0 auto;
         bottom: 0;
         height: 100%;
         font-weight: 300;
     }
-    footer p {
+    .footer p {
         text-align: center;
         background-color: rgba(0, 0, 0, 0.4);
         color: #FFF;
         margin: 10px 0 0 0;
     }
+    /* ############### */
+
+    /* LINK STYLING */
     a:link {
         color: #4CAF50;
         text-decoration: none;
@@ -310,32 +312,30 @@
     a:active {
         color: #000;
     }
-    #mobile_call {
-        display: none;
-    }
-    #g_map {
+    /* ############### */
+
+    /* GOOGLE MAP */
+    .google-map-div {
         clear: both;
     }
-    #g_map article {
-        width: 75%;
-        margin: 0 auto 0 auto;
-        height: 500px;
-        display: block;
-    }
-    #g_map iframe {
-        border: 0;
+    .google-map {
         width: 100%;
-        height: 100%;
+        height: 350px;
+        border: none;
     }
-    #fb_frame {
-        float: right;
+    /* ############### */
+
+    /* FACEBOOK FRAME */
+    .hours-fb {
+        display: flex;
+        justify-content: space-between;
+    }
+    .facebook-frame {
         width: 50%;
-        padding: 10px;
     }
     #hours {
         height: 100%;
         width: 50%;
-        padding: 10px;
     }
     #hours dt {
         float: left;
@@ -343,7 +343,11 @@
         width: 35px;
         font-weight: bold;
     }
-    #hours_fb {
-        height: 400px;
+    /* ############### */
+    
+    /* MOBILE CALL BUTTOn */
+    .mobile-call {
+        display: none;
     }
+    /* ############### */    
 }
