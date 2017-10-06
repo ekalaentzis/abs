@@ -227,11 +227,7 @@
         align-items: center;
         justify-content: space-between;
     }
-    .header_left {
-        float: left;
-    }
     .header_right {
-        float: right;
         text-align: center;
     }
     .logo {
@@ -247,10 +243,16 @@
 
     /* SOCIAL ICONS */
     .social {
-        clear: both;
-        width: 141px;
-        margin: 0 auto 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .separator {
+        border-left-width: 1px;
+        border-left-style: solid;
+        border-left-color: rgba(0, 0, 0, 0.1);
         height: 70px;
+        width: auto;
     }
     .social-image {
         padding: 10px;
@@ -266,9 +268,6 @@
     }
     .google {
         background-image: url('../images/google-100x100.jpg');
-        border-left-width: 1px;
-        border-left-style: solid;
-        border-left-color: rgba(0, 0, 0, 0.1);
     }
     /* ############### */
     
@@ -326,22 +325,21 @@
     /* ############### */
 
     /* FACEBOOK FRAME */
-    .hours-fb {
+    .hours-fb-container {
         display: flex;
         justify-content: space-between;
+        align-items: stretch;
+        flex-wrap: wrap;
     }
-    .facebook-frame {
-        width: 50%;
+    .hours {
+        margin-right: 100px;
     }
-    #hours {
-        height: 100%;
-        width: 50%;
+    .hours table {
+        width: 200px;
     }
-    #hours dt {
-        float: left;
-        padding-right: 20px;
-        width: 35px;
-        font-weight: bold;
+    .hours th {
+        text-align: right;
+        padding-right: 15px;
     }
     /* ############### */
     
