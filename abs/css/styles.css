@@ -196,7 +196,7 @@
     .container {
         padding: 25px 0;
         clear: both;
-        width: 80%;
+        width: 65%;
         min-width: 460px;
         margin: 0 auto 0 auto;
         /*background-color: rgba(0, 0, 0, 0.9);*/
@@ -281,17 +281,10 @@
 
     /* FOOTER */
     .footer {
-        clear: both;
-        margin: 0 auto 0 auto;
-        bottom: 0;
-        height: 100%;
-        font-weight: 300;
-    }
-    .footer p {
+        border-top-width: 1px;
+        border-top-style: solid;
+        border-top-color: rgba(0, 0, 0, 0.1);
         text-align: center;
-        background-color: rgba(0, 0, 0, 0.4);
-        color: #FFF;
-        margin: 10px 0 0 0;
     }
     /* ############### */
 
