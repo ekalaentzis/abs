@@ -28,6 +28,9 @@
     }
     .sub-container {
         padding: 10px 20px 40px 20px;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: rgba(0, 0, 0, 0.1);
     }
     .sub-container-div {
         margin-bottom: 30px;
