@@ -1,0 +1,135 @@
+@media only screen and (max-device-width: 736px) {
+    /*MOBILE*/
+    body {
+        font-family: 'Roboto', 'Open Sans', 'Lato', 'Helvetica Neue', sans-serif;
+        font-size: 1em;
+        font-weight: 300;
+        line-height: 1.5;
+        background-color: #FFF;
+        margin: 0;
+        padding: 0;
+        color: #000;
+    }
+    .header {
+        display: flex;
+        padding: 10px 10px 0 10px;
+        text-align: center;
+        overflow: auto;
+        flex-direction: column;
+    }
+    .logo {
+        max-width: 130px;
+        margin: 0px auto 0px auto;
+        width: 130px;
+        height: 72px;
+        background-image: url("../images/logo-350x194.png");
+        background-repeat: no-repeat;
+        background-size: 130px 72px;
+    }
+    .mobile-title {
+        display: block;
+    }
+    .sub-container {
+        padding: 10px 20px 40px 20px;
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: rgba(0, 0, 0, 0.1);
+    }
+    .sub-container-div {
+        margin-bottom: 30px;
+    }
+    .call {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .number {
+        color: #4CAF50;
+    }
+    .footer {
+        clear: both;
+        text-align: center;
+        margin-bottom: 55px;
+        padding: 10px 0 10px 0;
+    }
+    .facebook,
+    .google {
+        width: 50px;
+        height: 50px;
+        background-size: 50px 50px;
+        float: left;
+    }
+    a:link {
+        color: #4CAF50;
+        text-decoration: none;
+    }
+    a:visited {
+        color: #4CAF50;
+        text-decoration: none;
+    }
+    a:hover,
+    a:focus {
+        color: #4CAF50;
+        text-decoration: underline;
+    }
+    a:active {
+        color: #fb0e02;
+    }
+    .mobile-phone {
+        background-color: #4CAF50;
+        clear: both;
+        width: 100%;
+        position: fixed;
+        bottom: 0px;
+        height: 55px;
+        padding: 0;
+    }
+    .mobile-phone a {
+        padding: 15px 0 15px 0;
+        display: block;
+    }
+    .mobile-phone svg {
+        width: 25px;
+        height: 25px;
+        margin: auto;
+        display: block;
+        background-size: 25px 25px;
+        fill: #FFF;
+        background-repeat: no-repeat;
+    }
+    .desktop-phone, .facebook-frame {
+        display: none;
+    }
+    .hours table {
+        width: 200px;
+        margin: 0 auto;
+    }
+    .hours th {
+        text-align: right;
+        padding-right: 20px;
+    }
+    .google-map{
+        width: 100%;
+        height: 300px;
+    }
+    .social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .social-image {
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        margin: 0 10px 0 10px;
+        background-size: 50px 50px;
+        background-repeat: no-repeat;
+        background-origin: content-box;
+        border-radius: 2px;
+    }
+    .facebook {
+        background-image: url('../images/facebook-100x100.jpg');
+    }
+    .google {
+        background-image: url('../images/google-100x100.jpg');
+    }
+}
