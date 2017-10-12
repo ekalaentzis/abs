@@ -99,9 +99,9 @@
     .desktop-phone, .facebook-frame {
         display: none;
     }
-    .hours table {
-        width: 200px;
-        margin: 0 auto;
+    .hours-table {
+        display: flex;
+        justify-content: center;
     }
     .hours th {
         text-align: right;
