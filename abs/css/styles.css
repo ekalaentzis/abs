@@ -26,6 +26,9 @@
         background-repeat: no-repeat;
         background-size: 130px 72px;
     }
+    .mobile-title {
+        display: block;
+    }
     .sub-container {
         padding: 10px 20px 40px 20px;
         border-bottom-style: solid;
@@ -119,7 +122,9 @@
         display: inline-block;
         margin: 0 10px 0 10px;
         background-size: 50px 50px;
+        background-repeat: no-repeat;
         background-origin: content-box;
+        border-radius: 2px;
     }
     .facebook {
         background-image: url('../images/facebook-100x100.jpg');
@@ -223,6 +228,7 @@
         background-size: 50px 50px;
         background-repeat: no-repeat;
         background-origin: content-box;
+        border-radius: 2px;
     }
     .facebook {
         background-image: url('../images/facebook-100x100.jpg');
