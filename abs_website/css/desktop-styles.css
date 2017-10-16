@@ -1,5 +1,4 @@
 @media only screen and (min-device-width: 737px) {
-    /*DESKTOP*/
     body {
         font-family: 'Roboto', 'Open Sans', 'Lato', 'Helvetica Neue', sans-serif;
         font-size: 1em;
@@ -11,6 +10,8 @@
         display: block;
         color: #000;
     }
+
+    /* HEADINGS */
     h1 {
         font-size: 2em;
         font-weight: 300;
@@ -26,12 +27,11 @@
 
     /* CONTAINER STYLING */
     .container {
-        padding: 25px 0;
         clear: both;
         width: 65%;
         min-width: 460px;
         margin: 0 auto 0 auto;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
         overflow: auto;
     }
     .sub-container {
@@ -47,7 +47,9 @@
     .sub-container-div {
         margin-bottom: 35px;
     }
-    /* ############### */    
+    .last-container {
+        border-bottom: none;
+    } 
 
     /* HEADER */
     .header {
@@ -69,10 +71,9 @@
         background-size: 254px 141px;
         background-repeat: no-repeat;
     }
-    /* ############### */
 
-    /* SOCIAL ICONS */
-    .social {
+    /* SOCIAL */
+    .social-div {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -85,28 +86,20 @@
         width: auto;
     }
     .social-image {
+        display: block;
         padding: 10px;
         width: 50px;
         height: 50px;
         background-size: 50px 50px;
         background-repeat: no-repeat;
         background-origin: content-box;
-        border-radius: 2px;
+        border-radius: 50px;
     }
     .facebook {
         background-image: url('../images/facebook-100x100.jpg');
     }
     .google {
         background-image: url('../images/google-100x100.jpg');
-    }
-    /* ############### */
-    
-    .call {
-        font-size: 2em;
-        text-align: center;
-    }
-    .number {
-        color: #FFFF00;
     }
 
     /* FOOTER */
@@ -116,7 +109,6 @@
         border-top-color: rgba(0, 0, 0, 0.1);
         text-align: center;
     }
-    /* ############### */
 
     /* LINK STYLING */
     a:link {
@@ -134,7 +126,13 @@
     a:active {
         color: #000;
     }
-    /* ############### */
+    .call {
+        font-size: 2em;
+        text-align: center;
+    }
+    .number {
+        color: #FFFF00;
+    }
 
     /* GOOGLE MAP */
     .google-map-div {
@@ -145,9 +143,8 @@
         height: 350px;
         border: none;
     }
-    /* ############### */
 
-    /* FACEBOOK FRAME */
+    /* HOURS/FB CONTAINER */
     .hours-fb-container {
         display: flex;
         justify-content: space-between;
@@ -164,11 +161,9 @@
         text-align: right;
         padding-right: 15px;
     }
-    /* ############### */
     
     /* MOBILE CALL BUTTOn */
     .mobile-phone {
-        display: none;
+        display: none; 
     }
-    /* ############### */    
 }
