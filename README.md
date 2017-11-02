@@ -6,5 +6,5 @@ This is a repo for the development of a website for ABS Mobile Disc Machining.
 - [x] Default Desktop Site styling
 
 ## Repo Info
-Authors: @emmanuelkay
-Available at: http://www.aussiebrakes.com.au
+* Authors: @emmanuelkay
+* Available at: http://www.aussiebrakes.com.au
