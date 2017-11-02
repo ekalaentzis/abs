@@ -91,9 +91,10 @@
         width: 50px;
         height: 50px;
         background-size: 50px 50px;
-        background-repeat: no-repeat;
         background-origin: content-box;
-        border-radius: 50px;
+    }
+    .facebook, .google {
+        background-repeat: no-repeat;        
     }
     .facebook {
         background-image: url('../images/facebook-100x100.jpg');
