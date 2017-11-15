@@ -148,6 +148,7 @@
     /* HOURS/FB CONTAINER */
     .hours-fb-container {
         display: flex;
+        flex-direction: row-reverse;
         justify-content: space-between;
         align-items: stretch;
         flex-wrap: wrap;
