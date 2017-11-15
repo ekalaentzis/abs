@@ -18,13 +18,13 @@
         flex-direction: column;
     }
     .logo {
-        max-width: 130px;
+        max-width: 200px;
         margin: 0px auto 0px auto;
-        width: 130px;
-        height: 72px;
+        width: 200px;
+        height: 110px;
         background-image: url("../images/logo-350x194.png");
         background-repeat: no-repeat;
-        background-size: 130px 72px;
+        background-size: 200px 110px;
     }
     .mobile-title {
         display: block;
