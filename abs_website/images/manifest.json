@@ -1,5 +1,6 @@
 {
     "name": "ABS Mobile",
+    "short_name": "ABS Mobile",
     "icons": [
         {
             "src": "images/android-chrome-192x192.png",
