@@ -116,11 +116,10 @@
         align-items: center;
         justify-content: center;
     }
-    .social-icon svg {
+    .social-icon {
         height: 48px;
         width: 48px;
-        fill: #797979;
-        display: inline-block;
+        fill: #b1b1b1;
     }
     .social-image {
         width: 50px;
