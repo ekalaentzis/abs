@@ -73,13 +73,13 @@
     }
 
     /* SOCIAL */
-    .social-icon svg {
+    .social-icon {
         height: 48px;
         width: 48px;
         fill: #b1b1b1;
         display: inline-block;
     }
-    .social-icon svg:hover {
+    .social-icon:hover {
         fill: #4CAF50;
     }
     .social-div {
