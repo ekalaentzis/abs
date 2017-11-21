@@ -88,11 +88,11 @@
         display: block;
     }
     .mobile-phone svg {
-        width: 25px;
-        height: 25px;
+        width: 24px;
+        height: 24px;
         margin: auto;
         display: block;
-        background-size: 25px 25px;
+        background-size: 24px 24px;
         fill: #FFF;
         background-repeat: no-repeat;
     }

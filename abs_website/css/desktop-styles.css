@@ -73,6 +73,15 @@
     }
 
     /* SOCIAL */
+    .social-icon svg {
+        height: 48px;
+        width: 48px;
+        fill: #797979;
+        display: inline-block;
+    }
+    .social-icon svg:hover {
+        fill: #4CAF50;
+    }
     .social-div {
         display: flex;
         align-items: center;
@@ -88,9 +97,9 @@
     .social-image {
         display: block;
         padding: 10px;
-        width: 50px;
-        height: 50px;
-        background-size: 50px 50px;
+        width: 48px;
+        height: 48px;
+        background-size: 48px 48px;
         background-origin: content-box;
     }
     .facebook, .google {
