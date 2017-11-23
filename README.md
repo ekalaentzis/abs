@@ -9,8 +9,8 @@ This is a repo for the development of a website for ABS Mobile Disc Machining.
 
 ## Repo Info
 
-- Authors: @emmanuelkay
-- Website and IP/Business Owner: Steve K
+- Author/s: @emmanuelkay
+- Business Owner: Steve K
 - Available at: [http://www.aussiebrakes.com.au](http://www.aussiebrakes.com.au)
 
 ---
