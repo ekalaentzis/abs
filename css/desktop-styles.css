@@ -76,7 +76,7 @@
     .social-icon {
         height: 48px;
         width: 48px;
-        fill: #b1b1b1;
+        fill: #c6cbd1;;
     }
     .social-icon:hover {
         fill: #4CAF50;
@@ -116,7 +116,20 @@
         border-top-width: 1px;
         border-top-style: solid;
         border-top-color: rgba(0, 0, 0, 0.1);
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-icon {
+        margin-left: 5px;
+    }
+    .octicon {
+        width: 24px;
+        height: 24px;
+        fill: #c6cbd1;
+    }
+    .octicon:hover {
+        fill: #959da5;
     }
 
     /* LINK STYLING */
