@@ -63,6 +63,7 @@
         width: 24px;
         margin-left: 5px;
         overflow: hidden;
+        padding: 16px 0 16px 0;
     }
     .footer-icon-link {
         height: 24px;
