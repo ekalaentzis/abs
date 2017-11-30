@@ -50,19 +50,20 @@
     .footer {
         margin-bottom: 55px;
         padding: 10px 0 10px 0;
-        border-top-width: 1px;
-        border-top-style: solid;
-        border-top-color: rgba(0, 0, 0, 0.1);
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
+        /* flex-direction: column; */
         text-align: center;
+        width: 100%
+    }
+    .footer-text {
+        width: 75%;
     }
     .footer-icon {
         height: 24px;
         width: 24px;
-        margin-left: 5px;
+        margin-left: 10px;
         overflow: hidden;
         padding: 16px 0 16px 0;
     }
