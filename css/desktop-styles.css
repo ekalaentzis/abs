@@ -121,7 +121,15 @@
         align-items: center;
     }
     .footer-icon {
+        height: 24px;
+        width: 24px;
         margin-left: 5px;
+        overflow: hidden;
+    }
+    .footer-icon-link {
+        height: 24px;
+        width: 24px;
+        display: inline-block;
     }
     .octicon {
         width: 24px;
@@ -131,6 +139,7 @@
     .octicon:hover {
         fill: #959da5;
     }
+
 
     /* LINK STYLING */
     a:link {
