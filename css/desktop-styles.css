@@ -76,7 +76,7 @@
     .social-icon {
         height: 48px;
         width: 48px;
-        fill: #c6cbd1;;
+        fill: #c6cbd1;
     }
     .social-icon:hover {
         fill: #4CAF50;
@@ -95,7 +95,7 @@
     }
     .social-image {
         display: block;
-        padding: 10px;
+        margin: 10px;
         width: 48px;
         height: 48px;
         background-size: 48px 48px;
@@ -125,7 +125,7 @@
     .footer-icon {
         height: 24px;
         width: 24px;
-        margin-left: 5px;
+        margin-left: 15px;
         overflow: hidden;
     }
     .footer-icon-link {
