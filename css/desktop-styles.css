@@ -53,11 +53,14 @@
 
     /* HEADER */
     .header {
-        overflow: auto;
-        padding: 50px 75px 0 75px;
+        /* overflow: auto; */
+        /* padding: 50px 75px 0 75px; */
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 20px;
     }
     .header-right {
         text-align: center;
