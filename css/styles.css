@@ -70,13 +70,10 @@ iframe {
         text-align: center;
     }
     .logo {
-        max-width: 280px;
         margin: 0px auto 0px auto;
-        width: 254px;
-        height: 141px;
-        background-image: url("../images/logo-350x194.png");
-        background-size: 254px 141px;
-        background-repeat: no-repeat;
+        /* width: 254px;
+        height: 141px; */
+        width: 80%;
     }
     /* SOCIAL */
     .social-icon {
@@ -125,20 +122,6 @@ iframe {
         border-top-style: solid;
         border-top-color: rgba(0, 0, 0, 0.1);
         text-align: center;
-    }
-    .footer-icon-link {
-        vertical-align: bottom;
-    }
-    .footer-icon {
-        height: 24px;
-        width: 24px;
-        overflow: hidden;
-        fill: #bdc3c7;
-        display: inline-block;
-        vertical-align: text-bottom;        
-    }
-    .footer-icon:hover {
-        fill: #959da5;
     }
     /* LINK STYLING */
     a:link {
@@ -206,13 +189,9 @@ iframe {
         flex-direction: column;
     }
     .logo {
-        max-width: 200px;
         margin: 0px auto 0px auto;
-        width: 200px;
-        height: 110px;
-        background-image: url("../images/logo-350x194.png");
-        background-repeat: no-repeat;
-        background-size: 200px 110px;
+        width: 60%;
+        max-width: 300px;
     }
     .mobile-title {
         display: block;
