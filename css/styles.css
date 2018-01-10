@@ -1,5 +1,13 @@
 /* GLOBAL STYLING */
 
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
 iframe {
     border: none;
 }
@@ -12,8 +20,6 @@ iframe {
         font-family: 'Helvetica Neue', 'Source Sans Pro', sans-serif;
         font-size: 16px;
         line-height: 1.5;
-        padding: 0;
-        margin: 0;
         background-color: #FFF;
         display: block;
         color: #000;
@@ -57,29 +63,55 @@ iframe {
     }
     /* HEADER */
     .header {
-        /* overflow: auto; */
-        /* padding: 50px 75px 0 75px; */
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 70%;
         margin: 0 auto;
-        margin-top: 20px;
-    }
-    .header-right {
         text-align: center;
+        height: 50%;
+        color: #fff;
+        background-size: cover;
+        background-image: url('../images/header.jpg');
+        -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+    }
+    .header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .header-container:hover {
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    .header-heading {
+        padding: 50px 0;
+        text-transform: uppercase;
+    }
+    .header-heading h1 {
+        font-size: 4em;
+        font-weight: 300;
     }
     .logo {
         margin: 0px auto 0px auto;
         /* width: 254px;
         height: 141px; */
-        width: 80%;
+        width: 300px;
+    }
+    .logo-container {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
     }
     /* SOCIAL */
     .social-icon {
-        height: 48px;
-        width: 48px;
+        height: 24px;
+        width: 24px;
         fill: #c6cbd1;
+        vertical-align: bottom;
     }
     .social-icon:hover {
         fill: #4CAF50;
@@ -96,13 +128,11 @@ iframe {
         height: 70px;
         width: auto;
     }
-    .social-image {
+    .social-link {
         display: block;
         margin: 10px;
-        width: 48px;
-        height: 48px;
-        background-size: 48px 48px;
-        background-origin: content-box;
+        width: 24px;
+        height: 24px;
     }
     .facebook,
     .google {
@@ -125,6 +155,9 @@ iframe {
         font-weight: 300;
     }
     /* LINK STYLING */
+    a {
+        transition: color 0.3s;
+    }
     a:link {
         color: #4CAF50;
         text-decoration: none;
@@ -178,20 +211,47 @@ iframe {
         font-size: 16px;
         line-height: 1.5;
         background-color: #FFF;
-        margin: 0;
-        padding: 0;
         color: #000;
     }
     .header {
-        display: flex;
+        color: #Fff;
         text-align: center;
         overflow: auto;
         flex-direction: column;
+        background-size: cover;
+        background-image: url('../images/header.jpg');
+        -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+    }
+    .header-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        -webkit-transition: background-color 0.5s ease;
+        -moz-transition: background-color 0.5s ease;
+        -o-transition: background-color 0.5s ease;
+        transition: background-color 0.5s ease;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .header-heading {
+        padding: 50px 0;
+        text-transform: uppercase;
+    }
+    .header-heading h1 {
+        font-size: 4em;
+        font-weight: 300;
     }
     .logo {
         margin: 0px auto 0px auto;
         width: 60%;
         max-width: 300px;
+    }
+    .logo-container {
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
     }
     .mobile-title {
         display: block;
@@ -217,10 +277,10 @@ iframe {
         color: #bdc3c7;
         fill: #bdc3c7;
         margin-bottom: 64px;
-        padding: 16px 0;
+        padding: 16px 16px;
         text-align: center;
-        width: 100%;
-        font-weight: 300;        
+        font-weight: 300;
+        height: auto;
     }
     .footer-text {
         margin: 0;
