@@ -251,7 +251,7 @@ iframe {
         background-color: rgba(0, 0, 0, 0.5);
     }
     .header-heading {
-        padding: 25px 0;
+        padding: 25px 10px;
         text-transform: uppercase;
     }
     .header-heading h1 {
