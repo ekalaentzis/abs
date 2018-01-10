@@ -4,8 +4,6 @@ html,
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    width: 100%;
 }
 
 iframe {
@@ -88,7 +86,8 @@ iframe {
         background-color: rgba(0, 0, 0, 0.4);
     }
     .header-heading {
-        padding: 50px 0;
+        width: 100%;
+        padding: 75px 0;
         text-transform: uppercase;
     }
     .header-heading h1 {
