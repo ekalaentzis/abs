@@ -60,6 +60,18 @@
     -->
     <meta name="author" content="Emmanuel Kalaentzis (@emmanuelkay)" />
 
+    <!-- JQUERY -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="js/jquery.scrollintoview.min.js"></script>
+    <script type="text/javascript">
+            $(function () {
+                    $("#content-button").click(function(e) {
+                        e.preventDefault();
+                        $("#main").scrollintoview();
+                    });
+                });
+    </script>
+
 </head>
 
 <body>
@@ -72,7 +84,7 @@
         </div>
     </header>
     <div class="content-button">
-        <a href="#main">
+        <a id="content-button" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
                 <line x1="12" y1="5" x2="12" y2="19"></line>
@@ -94,9 +106,7 @@
                     <a title="Phone Number" href="tel:0418444121">0418 444 121</a>.</p>
                 <p>We service the Brisbane Southside and we come to you!</p>
                 <div class="logo-container">
-                    <!-- <div class="logo" title="ABS Logo"> -->
                     <img src="images/logo-350x194.png" class="logo" alt="Logo of ABS Mobile Disc Machining">
-                    <!-- </div> -->
                     <div class="desktop-phone">
                         <p>On-Site, On-Car |
                             <span class="number">
