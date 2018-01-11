@@ -110,6 +110,10 @@ iframe {
     .content-button svg {
         display: block;
     }
+    .flex-div {
+        display: flex;
+        justify-content: space-evenly;
+    }
     .logo {
         margin: 0px auto 0px auto;
         /* width: 254px;
