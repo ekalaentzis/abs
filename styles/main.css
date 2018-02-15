@@ -274,7 +274,7 @@ iframe {
     width: 100%;
     -webkit-transition: background-color 0.5s ease;
     transition: background-color 0.5s ease;
-    background-color: rgba(0, 0, 0, 0.4); }
+    background-color: rgba(0, 0, 0, 0.6); }
 
   .header-heading {
     padding: 50px 10px;
@@ -457,4 +457,4 @@ iframe {
   .google {
     background-image: url("../images/google-100x100.jpg"); } }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=main.css.map */
