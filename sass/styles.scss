@@ -10,6 +10,15 @@ body {
     line-height: 1.5;
     background-color: #FFFFFF;
     color: #000000;
+    animation: fadein 1s;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 iframe {
@@ -81,7 +90,7 @@ iframe {
         width: 100%;
         -webkit-transition: background-color 0.5s ease;
         transition: background-color 0.5s ease;
-        background-color: rgba(0, 0, 0, 0.8);
+        background-color: rgba(0, 0, 0, 0.6);
     }
     .header-container:hover {
         background-color: rgba(0, 0, 0, 0.4);
@@ -276,7 +285,7 @@ iframe {
         width: 100%;
         -webkit-transition: background-color 0.5s ease;
         transition: background-color 0.5s ease;
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.4);
     }
     .header-heading {
         padding: 50px 10px;
