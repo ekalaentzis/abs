@@ -10,13 +10,28 @@ body {
     line-height: 1.5;
     background-color: #FFFFFF;
     color: #000000;
-    animation: fadein 1s;
+    animation: fadein 1s ease;
 }
+
 @keyframes fadein {
     from {
         opacity: 0;
+        margin-top: -50px;
     }
     to {
+        opacity: 1;
+    }
+}
+
+@keyframes header-heading-fadein {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+        right: -50px;
+    }
+    100% {
         opacity: 1;
     }
 }
@@ -75,7 +90,14 @@ iframe {
         background-image: url('../images/header-desktop.jpg');
         -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
         box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
-    }
+        animation: appear 1s ease;
+    } // @keyframes appear {
+    //     0% {
+    //         margin-top: -50px;
+    //     }
+    //     100% {
+    //     }
+    // }
     .header-container {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -99,6 +121,7 @@ iframe {
         width: 100%;
         padding: 100px 0;
         text-transform: uppercase;
+        animation: header-heading-fadein 2s ease;
     }
     .header-heading h1 {
         font-size: 4em;
@@ -259,7 +282,7 @@ iframe {
 @media only screen and (max-device-width: 736px) {
     /*MOBILE*/
     .header {
-        color: #Fff;
+        color: #fff;
         text-align: center;
         overflow: auto;
         -webkit-box-orient: vertical;
@@ -290,6 +313,7 @@ iframe {
     .header-heading {
         padding: 50px 10px;
         text-transform: uppercase;
+        animation: header-heading-fadein 2s ease;        
     }
     .header-heading h1 {
         font-size: 3em;
@@ -403,12 +427,19 @@ iframe {
         display: block;
         background-color: #27ae60;
         border-radius: 50px;
-        -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
-        0 1px 10px 0 rgba(0, 0, 0, 0.12),
-        0 2px 4px -1px rgba(0, 0, 0, 0.4);
-        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14),
-        0 1px 10px 0 rgba(0, 0, 0, 0.12),
-        0 2px 4px -1px rgba(0, 0, 0, 0.4);
+        -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
+        animation: mobile-phone-scroll 3s ease;
+    }
+    @keyframes mobile-phone-scroll {
+        0% {
+            margin-right: -50px;
+        }
+        66% {
+            margin-right: -50px;
+        }
+        100% {
+        }
     }
     svg {
         height: 24px;
