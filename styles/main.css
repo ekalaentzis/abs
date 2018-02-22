@@ -5,11 +5,15 @@ body {
   font-family: 'Helvetica Neue', 'Source Sans Pro', sans-serif;
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  font-size: 1em;
+  font-weight: 300;
   line-height: 1.5;
   background-color: #FFFFFF;
-  color: #000000;
+  color: #212121;
   animation: fadein 1s ease; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; }
 
 @keyframes fadein {
   from {
@@ -406,13 +410,13 @@ iframe {
     border-radius: 50px;
     -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
     box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
-    animation: scrollup 3s ease; }
+    animation: mobile-phone-scroll 3s ease; }
 
-  @keyframes scrollup {
+  @keyframes mobile-phone-scroll {
     0% {
-      margin-right: -100px; }
+      margin-right: -75px; }
     66% {
-      margin-right: -100px; } }
+      margin-right: -75px; } }
   svg {
     height: 24px;
     width: 24px; }
