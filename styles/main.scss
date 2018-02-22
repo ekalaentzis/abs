@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i|Raleway');
 /* GLOBAL STYLING */
 
 html,
@@ -16,6 +16,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
+    font-family: 'Raleway', sans-serif;
 }
 
 @-webkit-keyframes fadein {
