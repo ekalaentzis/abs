@@ -1,22 +1,48 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i|Raleway');
 /* GLOBAL STYLING */
 
-html,
-body {
-    font-family: 'Helvetica Neue', 'Source Sans Pro', sans-serif;
+// Colours
+$bg-color: #FFFFFF;
+$font-color: #212121;
+$faded-font-color: #bdc3c7;
+
+$mobile-bg: #27ae60;
+
+
+// Headings
+$heading-font: 'Raleway', sans-serif;
+$heading-font-weight: 400;
+
+// Content
+$content-font: 'Helvetica Neue', 'Source Sans Pro', sans-serif;
+$content-font-weight: 300;
+
+
+
+@mixin flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+html {
     margin: 0;
     padding: 0;
+}
+body {
+    @extend html;
+    font-family: $content-font;
     font-size: 1em;
-    font-weight: 300;
+    font-weight: $content-font-weight;
     line-height: 1.5;
-    background-color: #FFFFFF;
-    color: #212121;
-    -webkit-animation: fadein 1s ease;
-            animation: fadein 1s ease;
+    background-color: $bg-color;
+    color: $font-color;
+    -webkit-animation: fadein 1s ease-out;
+            animation: fadein 1s ease-out;
 }
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-    font-family: 'Raleway', sans-serif;
+    font-weight: $content-font-weight;
+    font-family: $heading-font;
 }
 
 @-webkit-keyframes fadein {
@@ -90,7 +116,7 @@ iframe {
         clear: both;
         width: 65%;
         min-width: 460px;
-        margin: 0 auto 0 auto;
+        margin: 0 auto;
         /* margin-bottom: 20px; */
         overflow: auto;
     }
@@ -119,19 +145,9 @@ iframe {
         background-image: url('../images/header-desktop.jpg');
         -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
         box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
-        -webkit-animation: appear 1s ease;
-                animation: appear 1s ease;
-    } // @keyframes appear {
-    //     0% {
-    //         margin-top: -50px;
-    //     }
-    //     100% {
-    //     }
-    // }
+    }
     .header-container {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
+        @include flex;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
@@ -156,7 +172,6 @@ iframe {
     }
     .header-heading h1 {
         font-size: 4em;
-        font-weight: 300;
     }
     .content-button {
         margin-top: -20px;
@@ -188,9 +203,7 @@ iframe {
         flex-grow: 1;
     }
     .flex-div {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
+        @include flex;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between;
@@ -210,16 +223,14 @@ iframe {
     .social-icon {
         height: 24px;
         width: 24px;
-        fill: #c6cbd1;
+        fill: $faded-font-color;
         vertical-align: bottom;
     }
     .social-icon:hover {
         fill: #4CAF50;
     }
     .social-div {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
+        @include flex;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
@@ -252,13 +263,12 @@ iframe {
     }
     /* FOOTER */
     .footer {
-        color: #bdc3c7;
-        fill: #bdc3c7;
+        color: $faded-font-color;
+        fill: $faded-font-color;
         border-top-width: 1px;
         border-top-style: solid;
         border-top-color: rgba(0, 0, 0, 0.1);
         text-align: center;
-        font-weight: 300;
     }
     /* LINK STYLING */
     a {
@@ -326,9 +336,7 @@ iframe {
         box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
     }
     .header-container {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
+        @include flex;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
@@ -349,7 +357,6 @@ iframe {
     }
     .header-heading h1 {
         font-size: 3em;
-        font-weight: 300;
     }
     .content-button {
         margin-top: -20px;
@@ -454,15 +461,15 @@ iframe {
         padding: 0;
     }
     .mobile-phone a {
-        padding: 20px 20px 20px 20px;
+        padding: 20px;
         margin: 20px;
         display: block;
-        background-color: #27ae60;
+        background-color: $mobile-bg;
         border-radius: 50px;
         -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
         box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
-        -webkit-animation: mobile-phone-scroll 3s ease;
-                animation: mobile-phone-scroll 3s ease;
+        -webkit-animation: mobile-phone-scroll 3s;
+                animation: mobile-phone-scroll 3s;
     }
     @-webkit-keyframes mobile-phone-scroll {
         0% {
@@ -500,9 +507,7 @@ iframe {
         display: none;
     }
     .hours-table {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
+        @include flex;
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
@@ -516,9 +521,7 @@ iframe {
         height: 300px;
     }
     .social-div {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
+        @include flex;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
