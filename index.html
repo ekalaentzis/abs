@@ -54,39 +54,6 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="styles/main.css" />
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74093313-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-74093313-1');
-    </script>
-
-    <!-- 
-        All images are owned by their respective copyright owners including the Facebook and Google logos.
-        Any images of ABS Mobile Disc Machining are owned and copyrighted by the business and may not be reproduced.
-        Last Updated: December 2017
-        Designer & Developer: Emmanuel Kalaentzis (GitHub: https://github.com/emmanuelkay)
-    -->
-
-    <!-- JQUERY -->
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-    <script src="js/jquery.scrollintoview.min.js"></script>
-    <script type="text/javascript">
-        $(function () {
-            $("#content-button").click(function (e) {
-                e.preventDefault();
-                $("#main").scrollintoview();
-            });
-        });
-    </script>
-
 </head>
 
 <body>
@@ -99,7 +66,7 @@
         </div>
     </header>
     <div class="content-button">
-        <a id="content-button" href="#">
+        <a id="content-button" href="#main">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round">
                 <line x1="12" y1="5" x2="12" y2="19"></line>
@@ -229,7 +196,8 @@
         </div>
     </div>
     <footer class="footer">
-        <p class="footer-text">Copyright &copy; ABS Mobile Disc Machining, Australia 2018
+        <p class="footer-text">
+            Copyright &copy; ABS Mobile Disc Machining, Australia 2018 | <a href="privacy-policy.html">Privacy Policy</a>
         </p>
 
     </footer>
@@ -244,6 +212,19 @@
             </svg>
         </a>
     </div>
+    <script src="scripts/smoothscroll.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-74093313-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-74093313-1');
+    </script>
 </body>
 
 </html>

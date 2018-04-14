@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i|Raleway');
 /* GLOBAL STYLING */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i|Raleway');
 
-// Colours
-$bg-color: #FFFFFF;
-$font-color: #212121;
-$faded-font-color: #bdc3c7;
+// COLOURS
+    // desktop
+    $bg-color: #FFFFFF;
+    $font-color: #212121;
+    $faded-font-color: #bdc3c7;
 
-$mobile-bg: #27ae60;
+    // mobile
+    $mobile-bg-color: #27ae60;
 
 
-// Headings
+// HEADINGS
 $heading-font: 'Raleway', sans-serif;
 $heading-font-weight: 400;
 
@@ -18,13 +20,20 @@ $content-font: 'Helvetica Neue', 'Source Sans Pro', sans-serif;
 $content-font-weight: 300;
 
 
+// Header
+$desktop-header-img: url('../images/header-desktop.jpg');
+$mobile-header-img: url('../images/header-mobile.jpg');
+
+
 
 @mixin flex {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
 }
-
+:root {
+    font-size: 1rem;
+}
 html {
     margin: 0;
     padding: 0;
@@ -32,7 +41,7 @@ html {
 body {
     @extend html;
     font-family: $content-font;
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: $content-font-weight;
     line-height: 1.5;
     background-color: $bg-color;
@@ -58,7 +67,7 @@ h1, h2, h3, h4, h5, h6 {
 @keyframes fadein {
     from {
         opacity: 0;
-        margin-top: -50px;
+        margin-top: -5em;
     }
     to {
         opacity: 1;
@@ -71,7 +80,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     50% {
         opacity: 0;
-        right: -50px;
+        right: -5em;
     }
     100% {
         opacity: 1;
@@ -84,7 +93,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     50% {
         opacity: 0;
-        right: -50px;
+        right: -5em;
     }
     100% {
         opacity: 1;
@@ -96,8 +105,8 @@ iframe {
 }
 
 /* DESKTOP STYLING */
-
-@media only screen and (min-device-width: 737px) {
+$responsive-breakpoint: 737px;
+@media only screen and (min-device-width: $responsive-breakpoint) {
     /* HEADINGS */
     h1 {
         font-size: 2em;
@@ -121,8 +130,8 @@ iframe {
         overflow: auto;
     }
     .sub-container {
-        margin: 15px 0;
-        padding: 15px 0;
+        margin: 1em 0;
+        padding: 1em 0;
         width: auto;
         height: auto;
         border-bottom-style: solid;
@@ -130,7 +139,7 @@ iframe {
         border-bottom-color: rgba(0, 0, 0, 0.1);
     }
     .sub-container-div {
-        margin-bottom: 35px;
+        margin-bottom: 2em;
     }
     .last-container {
         border-bottom: none;
@@ -140,9 +149,9 @@ iframe {
         margin: 0 auto;
         text-align: center;
         height: 50%;
-        color: #fff;
+        color: #ffffff;
         background-size: cover;
-        background-image: url('../images/header-desktop.jpg');
+        background-image: $desktop-header-img;
         -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
         box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
     }
@@ -165,7 +174,7 @@ iframe {
     }
     .header-heading {
         width: 100%;
-        padding: 100px 0;
+        padding: 6em 0;
         text-transform: uppercase;
         -webkit-animation: header-heading-fadein 2s ease;
                 animation: header-heading-fadein 2s ease;
@@ -174,20 +183,21 @@ iframe {
         font-size: 4em;
     }
     .content-button {
-        margin-top: -20px;
+        margin-top: -1em;
         height: auto;
         text-align: center;
     }
     .content-button a {
-        background-color: #fff;
+        background-color: #ffffff;
         display: inline-block;
-        padding: 10px;
+        padding: 0.5em;
         border-radius: 100%;
         -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
         box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
     }
     .content-button svg {
         display: block;
+        stroke-width: 1;
     }
     .text-center {
         text-align: center;
@@ -209,20 +219,18 @@ iframe {
         justify-content: space-between;
     }
     .logo {
-        margin: 0px auto 0px auto;
-        /* width: 254px;
-        height: 141px; */
-        width: 300px;
+        margin: 0 auto;
+        width: 20em;
     }
     .logo-container {
-        width: 300px;
+        width: 20em;
         margin: 0 auto;
         text-align: center;
     }
     /* SOCIAL */
     .social-icon {
-        height: 24px;
-        width: 24px;
+        height: 2em;
+        width: 2em;
         fill: $faded-font-color;
         vertical-align: bottom;
     }
@@ -247,9 +255,9 @@ iframe {
     }
     .social-link {
         display: block;
-        margin: 10px;
-        width: 24px;
-        height: 24px;
+        margin: 1em;
+        width: 2em;
+        height: 2em;
     }
     .facebook,
     .google {
@@ -269,6 +277,10 @@ iframe {
         border-top-style: solid;
         border-top-color: rgba(0, 0, 0, 0.1);
         text-align: center;
+        transition: color 1s;
+    }
+    .footer:hover {
+        color: #959da5;
     }
     /* LINK STYLING */
     a {
@@ -288,7 +300,7 @@ iframe {
         color: #666600;
     }
     a:active {
-        color: #000;
+        color: #000000;
     }
     .call {
         font-size: 2em;
@@ -301,7 +313,7 @@ iframe {
     }
     .google-map {
         width: 100%;
-        height: 350px;
+        height: 20em;
         border: none;
     }
     .hours table {
@@ -310,7 +322,7 @@ iframe {
     }
     .hours th {
         text-align: right;
-        padding-right: 15px;
+        padding-right: 1em;
     }
     /* MOBILE CALL BUTTOn */
     .mobile-phone {
@@ -319,8 +331,8 @@ iframe {
 }
 
 /* MOBILE STYLING */
-
-@media only screen and (max-device-width: 736px) {
+$mobile-breakpoint: $responsive-breakpoint;
+@media only screen and (max-device-width: $mobile-breakpoint) {
     /*MOBILE*/
     .header {
         color: #fff;
@@ -331,7 +343,7 @@ iframe {
         -ms-flex-direction: column;
         flex-direction: column;
         background-size: cover;
-        background-image: url('../images/header-mobile.jpg');
+        background-image: $mobile-header-img;
         -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
         box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
     }
@@ -359,20 +371,23 @@ iframe {
         font-size: 3em;
     }
     .content-button {
-        margin-top: -20px;
+        margin-top: -1.25em;
         height: auto;
         text-align: center;
     }
     .content-button a {
         background-color: #fff;
         display: inline-block;
-        padding: 10px;
+        padding: 0.5em;
         border-radius: 100%;
         -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
         box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
     }
     .content-button svg {
+        height: 1.5em;
+        width: 1.5em;
         display: block;
+        stroke-width: 1;
     }
     .logo {
         margin: 0px auto 0px auto;
@@ -464,7 +479,7 @@ iframe {
         padding: 20px;
         margin: 20px;
         display: block;
-        background-color: $mobile-bg;
+        background-color: $mobile-bg-color;
         border-radius: 50px;
         -webkit-box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
         box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.4);
