@@ -173,12 +173,19 @@ $responsive-breakpoint: 737px;
     .header-heading {
         width: 100%;
         padding: 6em 0;
-        text-transform: uppercase;
-        -webkit-animation: header-heading-fadein 2s ease;
-                animation: header-heading-fadein 2s ease;
-    }
-    .header-heading h1 {
-        font-size: 4em;
+
+
+        h1 {
+            -webkit-animation: header-heading-fadein 2s ease;
+            animation: header-heading-fadein 2s ease;
+            font-size: 4em;
+            text-transform: uppercase;
+        }
+        h2 {
+            color: $faded-font-color;
+            -webkit-animation: header-heading-fadein 3s ease;
+            animation: header-heading-fadein 3s ease;
+        }
     }
     .content-button {
         margin-top: -1em;
